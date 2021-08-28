@@ -36,7 +36,7 @@ app.post("/", (req, res) => {
 
   const options = {
     method: "POST",
-    auth: "selviraja1:9220085f450b44cde97b15874465026e-us5",
+    auth: "selviraja1:45f0ef067876aaf18c85d1db3dcdcdee-us5",
   };
 
   const request = https.request(url, options, (response) => {
@@ -59,9 +59,9 @@ app.post("/failure", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(3005, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running on port 3005");
 });
 
-// API Key: 9220085f450b44cde97b15874465026e-us5
+// API Key: 45f0ef067876aaf18c85d1db3dcdcdee-us5
 // Audience ID: b6446192f8
